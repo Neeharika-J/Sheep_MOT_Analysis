@@ -179,9 +179,9 @@ The results show that model size has a greater impact on HOTA than YOLO version.
 
 These findings are supported by the graphs,
 
-![](SHEEP_MOT_ANALYSIS\images\trackers.png)
+![]([SHEEP_MOT_ANALYSIS\images\trackers.png](https://github.com/Neeharika-J/Sheep_MOT_Analysis/blob/main/images/trackers.png))
 
-![](SHEEP_MOT_ANALYSIS\images\detectors.png)
+![]([SHEEP_MOT_ANALYSIS\images\detectors.png](https://github.com/Neeharika-J/Sheep_MOT_Analysis/blob/main/images/detectors.png))
 
 
 Finally, all trackers output fewer boxes than the 1,597 ground-truth boxes for two reasons:
@@ -189,7 +189,7 @@ Finally, all trackers output fewer boxes than the 1,597 ground-truth boxes for t
 2. **Trackers filter further.** SORT and DeepSORT only report a track after several consecutive hits (`min_hits`) and drop weak detections. ByteTrack and BoTSORT also use low-confidence detections, which is why they output more boxes (BoTSORT 1,184 vs SORT 881).
 
 
-![](SHEEP_MOT_ANALYSIS\images\detections.png)
+![](https://github.com/Neeharika-J/Sheep_MOT_Analysis/blob/main/images/detections.png)
 
 
 ## Limitations and Future Work
