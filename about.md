@@ -181,7 +181,9 @@ These findings are supported by the graphs,
 
 ![](https://github.com/Neeharika-J/Sheep_MOT_Analysis/blob/main/images/trackers.png)
 
-![](https://github.com/Neeharika-J/Sheep_MOT_Analysis/blob/main/images/detectors.png)
+![](https://github.com/Neeharika-J/Sheep_MOT_Analysis/blob/main/images/detectors.png) 
+
+In the above graph ByteTrack is kept as the reference Tracker! ☝️
 
 
 Finally, all trackers output fewer boxes than the 1,597 ground-truth boxes for two reasons:
