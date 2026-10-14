@@ -1,0 +1,9 @@
+# Tracking + evaluation environment (run_config.py, run_trackers.py, setup.py,
+ultralytics     
+opencv-python
+numpy
+openpyxl         
+deep-sort-realtime 
+filterpy
+scipy
+matplotlib

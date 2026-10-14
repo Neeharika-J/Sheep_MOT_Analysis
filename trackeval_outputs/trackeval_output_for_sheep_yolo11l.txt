@@ -1,0 +1,170 @@
+Eval Config:
+USE_PARALLEL         : False                         
+NUM_PARALLEL_CORES   : 8                             
+BREAK_ON_ERROR       : True                          
+RETURN_ON_ERROR      : False                         
+LOG_ON_ERROR         : c:\Users\web.dev-6\Desktop\flow\new\sheep_mot_final\TrackEval\error_log.txt
+PRINT_RESULTS        : True                          
+PRINT_ONLY_COMBINED  : False                         
+PRINT_CONFIG         : True                          
+TIME_PROGRESS        : True                          
+DISPLAY_LESS_PROGRESS : False                         
+OUTPUT_SUMMARY       : True                          
+OUTPUT_EMPTY_CLASSES : True                          
+OUTPUT_DETAILED      : True                          
+PLOT_CURVES          : True                          
+
+MotChallenge2DBox Config:
+PRINT_CONFIG         : True                          
+GT_FOLDER            : data/gt/mot_challenge/        
+TRACKERS_FOLDER      : data/trackers/mot_challenge/  
+OUTPUT_FOLDER        : None                          
+TRACKERS_TO_EVAL     : ['SORT', 'BoTSORT', 'DeepSORT', 'ByteTrack']
+CLASSES_TO_EVAL      : ['pedestrian']                
+BENCHMARK            : Sheep                         
+SPLIT_TO_EVAL        : train                         
+INPUT_AS_ZIP         : False                         
+DO_PREPROC           : True                          
+TRACKER_SUB_FOLDER   : data                          
+OUTPUT_SUB_FOLDER    :                               
+TRACKER_DISPLAY_NAMES : None                          
+SEQMAP_FOLDER        : None                          
+SEQMAP_FILE          : None                          
+SEQ_INFO             : None                          
+GT_LOC_FORMAT        : {gt_folder}/{seq}/gt/gt.txt   
+SKIP_SPLIT_FOL       : False                         
+
+CLEAR Config:
+METRICS              : ['HOTA', 'CLEAR', 'Identity'] 
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+METRICS              : ['HOTA', 'CLEAR', 'Identity'] 
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 4 tracker(s) on 1 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating SORT
+
+    MotChallenge2DBox.get_raw_seq_data(SORT, seq01)                        0.0157 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.0297 sec
+    HOTA.eval_sequence()                                                   0.0411 sec
+    CLEAR.eval_sequence()                                                  0.0069 sec
+    Identity.eval_sequence()                                               0.0018 sec
+    Count.eval_sequence()                                                  0.0000 sec
+1 eval_sequence(seq01, SORT)                                             0.0957 sec
+
+All sequences for SORT finished in 0.09 seconds
+
+HOTA: SORT-pedestrian              HOTA      DetA      AssA      DetRe     DetPr     AssRe     AssPr     LocA      OWTA      HOTA(0)   LocA(0)   HOTALocA(0)
+seq01                              56.88     47.655    67.897    49.369    88.388    70.99     89.836    89.614    57.879    65.358    87.68     57.306    
+COMBINED                           56.88     47.655    67.897    49.369    88.388    70.99     89.836    89.614    57.879    65.358    87.68     57.306    
+
+CLEAR: SORT-pedestrian             MOTA      MOTP      MODA      CLR_Re    CLR_Pr    MTR       PTR       MLR       sMOTA     CLR_TP    CLR_FN    CLR_FP    IDSW      MT        PT        ML        Frag      
+seq01                              51.91     88.845    51.972    53.914    96.525    50        20        30        45.896    861       736       31        1         5         2         3         4         
+COMBINED                           51.91     88.845    51.972    53.914    96.525    50        20        30        45.896    861       736       31        1         5         2         3         4         
+
+Identity: SORT-pedestrian          IDF1      IDR       IDP       IDTP      IDFN      IDFP      
+seq01                              63.961    49.843    89.238    796       801       96        
+COMBINED                           63.961    49.843    89.238    796       801       96        
+
+Count: SORT-pedestrian             Dets      GT_Dets   IDs       GT_IDs    
+seq01                              892       1597      10        10        
+COMBINED                           892       1597      10        10        
+
+Evaluating BoTSORT
+
+    MotChallenge2DBox.get_raw_seq_data(BoTSORT, seq01)                     0.0163 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.0295 sec
+    HOTA.eval_sequence()                                                   0.0411 sec
+    CLEAR.eval_sequence()                                                  0.0065 sec
+    Identity.eval_sequence()                                               0.0017 sec
+    Count.eval_sequence()                                                  0.0000 sec
+2 eval_sequence(seq01, BoTSORT)                                          0.0957 sec
+
+All sequences for BoTSORT finished in 0.10 seconds
+
+HOTA: BoTSORT-pedestrian           HOTA      DetA      AssA      DetRe     DetPr     AssRe     AssPr     LocA      OWTA      HOTA(0)   LocA(0)   HOTALocA(0)
+seq01                              56.821    44.48     72.638    53.271    71.551    75.629    93.101    92.66     62.202    61.48     91.553    56.287    
+COMBINED                           56.821    44.48     72.638    53.271    71.551    75.629    93.101    92.66     62.202    61.48     91.553    56.287    
+
+CLEAR: BoTSORT-pedestrian          MOTA      MOTP      MODA      CLR_Re    CLR_Pr    MTR       PTR       MLR       sMOTA     CLR_TP    CLR_FN    CLR_FP    IDSW      MT        PT        ML        Frag      
+seq01                              38.51     91.985    38.635    56.544    75.946    60        10        30        33.978    903       694       286       2         6         1         3         6         
+COMBINED                           38.51     91.985    38.635    56.544    75.946    60        10        30        33.978    903       694       286       2         6         1         3         6         
+
+Identity: BoTSORT-pedestrian       IDF1      IDR       IDP       IDTP      IDFN      IDFP      
+seq01                              59.081    51.534    69.218    823       774       366       
+COMBINED                           59.081    51.534    69.218    823       774       366       
+
+Count: BoTSORT-pedestrian          Dets      GT_Dets   IDs       GT_IDs    
+seq01                              1189      1597      10        10        
+COMBINED                           1189      1597      10        10        
+
+Evaluating DeepSORT
+
+    MotChallenge2DBox.get_raw_seq_data(DeepSORT, seq01)                    0.0144 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.0287 sec
+    HOTA.eval_sequence()                                                   0.0409 sec
+    CLEAR.eval_sequence()                                                  0.0072 sec
+    Identity.eval_sequence()                                               0.0017 sec
+    Count.eval_sequence()                                                  0.0000 sec
+3 eval_sequence(seq01, DeepSORT)                                         0.0936 sec
+
+All sequences for DeepSORT finished in 0.09 seconds
+
+HOTA: DeepSORT-pedestrian          HOTA      DetA      AssA      DetRe     DetPr     AssRe     AssPr     LocA      OWTA      HOTA(0)   LocA(0)   HOTALocA(0)
+seq01                              51.543    46.091    57.661    49.329    80.965    64.798    77.858    86.212    53.324    63.1      82.829    52.265    
+COMBINED                           51.543    46.091    57.661    49.329    80.965    64.798    77.858    86.212    53.324    63.1      82.829    52.265    
+
+CLEAR: DeepSORT-pedestrian         MOTA      MOTP      MODA      CLR_Re    CLR_Pr    MTR       PTR       MLR       sMOTA     CLR_TP    CLR_FN    CLR_FP    IDSW      MT        PT        ML        Frag      
+seq01                              51.597    84.386    52.035    56.481    92.703    60        10        30        42.778    902       695       71        7         6         1         3         11        
+COMBINED                           51.597    84.386    52.035    56.481    92.703    60        10        30        42.778    902       695       71        7         6         1         3         11        
+
+Identity: DeepSORT-pedestrian      IDF1      IDR       IDP       IDTP      IDFN      IDFP      
+seq01                              61.012    49.092    80.576    784       813       189       
+COMBINED                           61.012    49.092    80.576    784       813       189       
+
+Count: DeepSORT-pedestrian         Dets      GT_Dets   IDs       GT_IDs    
+seq01                              973       1597      13        10        
+COMBINED                           973       1597      13        10        
+
+Evaluating ByteTrack
+
+    MotChallenge2DBox.get_raw_seq_data(ByteTrack, seq01)                   0.0153 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.0285 sec
+    HOTA.eval_sequence()                                                   0.0410 sec
+    CLEAR.eval_sequence()                                                  0.0062 sec
+    Identity.eval_sequence()                                               0.0018 sec
+    Count.eval_sequence()                                                  0.0000 sec
+4 eval_sequence(seq01, ByteTrack)                                        0.0937 sec
+
+All sequences for ByteTrack finished in 0.09 seconds
+
+HOTA: ByteTrack-pedestrian         HOTA      DetA      AssA      DetRe     DetPr     AssRe     AssPr     LocA      OWTA      HOTA(0)   LocA(0)   HOTALocA(0)
+seq01                              60.834    51.197    72.343    52.991    91.488    75.245    93.282    92.68     61.912    65.904    91.574    60.35     
+COMBINED                           60.834    51.197    72.343    52.991    91.488    75.245    93.282    92.68     61.912    65.904    91.574    60.35     
+
+CLEAR: ByteTrack-pedestrian        MOTA      MOTP      MODA      CLR_Re    CLR_Pr    MTR       PTR       MLR       sMOTA     CLR_TP    CLR_FN    CLR_FP    IDSW      MT        PT        ML        Frag      
+seq01                              54.415    92.009    54.54     56.23     97.081    60        10        30        49.921    898       699       27        2         6         1         3         6         
+COMBINED                           54.415    92.009    54.54     56.23     97.081    60        10        30        49.921    898       699       27        2         6         1         3         6         
+
+Identity: ByteTrack-pedestrian     IDF1      IDR       IDP       IDTP      IDFN      IDFP      
+seq01                              64.948    51.284    88.541    819       778       106       
+COMBINED                           64.948    51.284    88.541    819       778       106       
+
+Count: ByteTrack-pedestrian        Dets      GT_Dets   IDs       GT_IDs    
+seq01                              925       1597      10        10        
+COMBINED                           925       1597      10        10        
+
+Timing analysis:
+MotChallenge2DBox.get_raw_seq_data                                     0.0617 sec
+MotChallenge2DBox.get_preprocessed_seq_data                            0.1164 sec
+HOTA.eval_sequence                                                     0.1641 sec
+CLEAR.eval_sequence                                                    0.0268 sec
+Identity.eval_sequence                                                 0.0070 sec
+Count.eval_sequence                                                    0.0000 sec
+eval_sequence                                                          0.3786 sec
+Evaluator.evaluate                                                     1.8374 sec

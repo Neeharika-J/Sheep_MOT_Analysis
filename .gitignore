@@ -1,0 +1,11 @@
+# downloaded / cloned
+TrackEval/
+# models/
+
+
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
