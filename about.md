@@ -10,7 +10,7 @@ While studying object detection i found most tutorials covered people, cars and 
 Sheep are an interesting object detection experiment for me since all sheep look alike, they move in large numbers, and they don't move in constant speeds - some move faster than others, some stop midway and rest are slow. Their motion is hard to predict. Also creating groundtruth is not easy too. Looking for the right video for this project, I came across many videos where tracking sheeps manually was harder than I imagined.
 
 
-![Full Pipeline Demonstration](images\Full_pipeline.png)
+!([Full Pipeline Demonstration](https://github.com/Neeharika-J/Sheep_MOT_Analysis/blob/main/images/Full_pipeline.png))
 
 
 
