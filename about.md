@@ -179,9 +179,9 @@ The results show that model size has a greater impact on HOTA than YOLO version.
 
 These findings are supported by the graphs,
 
-![]([SHEEP_MOT_ANALYSIS\images\trackers.png](https://github.com/Neeharika-J/Sheep_MOT_Analysis/blob/main/images/trackers.png))
+![](https://github.com/Neeharika-J/Sheep_MOT_Analysis/blob/main/images/trackers.png)
 
-![]([SHEEP_MOT_ANALYSIS\images\detectors.png](https://github.com/Neeharika-J/Sheep_MOT_Analysis/blob/main/images/detectors.png))
+![](https://github.com/Neeharika-J/Sheep_MOT_Analysis/blob/main/images/detectors.png)
 
 
 Finally, all trackers output fewer boxes than the 1,597 ground-truth boxes for two reasons:
