@@ -1,6 +1,6 @@
 # Sheep MOT Analysis
 
-A pipeline for evaluating multiple object-tracking algorithms on sheep videos. It runs four trackers — SORT, BoTSORT, DeepSORT, and ByteTrack — and uses TrackEval to compare their tracking results against ground-truth annotations using MOT metrics.
+A pipeline for evaluating multiple object-tracking algorithms on sheep videos. It runs four trackers — SORT, BoTSORT, DeepSORT, and ByteTrack — and uses TrackEval to compare their tracking results against ground-truth annotations using MOT metrics. If you wish to read my findings/ project description please refer **[about.md](https://github.com/Neeharika-J/Sheep_MOT_Analysis/blob/main/about.md)**. *This readme contains **only instructions** on how to run the project on your system if you wish to.*
 
 ## 1. Start Fresh (Optional)
 
